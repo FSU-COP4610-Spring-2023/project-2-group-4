@@ -11,7 +11,7 @@
 
 MODULE_LICENSE("Dual BSD/GPL");
 
-#define BUF_LEN 1000
+#define BUF_LEN 10000
 
 static struct proc_dir_entry* proc_entry;
 
