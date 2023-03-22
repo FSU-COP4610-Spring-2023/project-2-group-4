@@ -17,7 +17,7 @@ MODULE_LICENSE("Dual BSD/GPL");
 
 
 //DATA FOR PROC BULLSHIT
-#define BUF_LEN 10000
+#define BUF_LEN 10000000
 static char msg[BUF_LEN];
 static struct proc_dir_entry* proc_entry;
 static int procfs_buf_len;
@@ -378,6 +378,7 @@ int initialize_bar(void) {
         int i = 0;
         int j = 0;
         fr = 0;
+        closedFlag = 0;
         currentOccupancy = 0;
         customersServiced = 0;
         //acquire lock
